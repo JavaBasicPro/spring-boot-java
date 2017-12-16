@@ -36,11 +36,8 @@ class CheesePizza extends PizzaFactory{
         System.out.println("制作蛋糕");
     }
 }
-
 class OtherPizza extends PizzaFactory{
-
     public void make(){
         System.out.println("烘培蛋糕");
     }
-
 }
