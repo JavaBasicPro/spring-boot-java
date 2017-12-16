@@ -1,13 +1,14 @@
 package pattern;
 
-import sun.tools.jconsole.BorderedComponent;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
 
 /**
  * Created by jinpanpan on 2017/11/15.
