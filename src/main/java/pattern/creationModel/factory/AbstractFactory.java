@@ -14,6 +14,7 @@ public class AbstractFactory {
 
 
 }
+
 //抽象产品（）
 abstract  class  BenzCar{
 
@@ -34,7 +35,7 @@ abstract  class  BenzCar{
     }
 }
 
-class BenzSportCar extends BenzCar{
+class BenzSportCar extends BenzCar {
 
     public BenzSportCar(String name) {
         super(name);
@@ -46,7 +47,7 @@ class BenzSportCar extends BenzCar{
     }
 }
 
-class BmwBusinessCar extends BenzCar{
+class BmwBusinessCar extends BenzCar {
 
     public BmwBusinessCar(String name) {
         super(name);

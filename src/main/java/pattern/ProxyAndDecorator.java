@@ -28,20 +28,21 @@ interface DeRunnner{
 }
 
 //具体的模式
-class ConCreRunnerImpl implements DeRunnner{
+class ConCreRunnerImpl implements DeRunnner {
 
     @Override
     public void run() {
         System.out.println("我是具体的被装饰的构件，开跑");
     }
 }
+
 /*装饰抽象类
    1、装饰抽象类可以扩展DeRunnner的功能，但DeRunnner不需要知道该"抽象类"的存在
    2、具体的装饰者 给DeRunnner添加功能的目的
 */
-abstract class  DeRunner implements DeRunnner{
+abstract class  DeRunner implements DeRunnner {
 
-   private DeRunnner  deRunnner;
+   private DeRunnner deRunnner;
 
     public DeRunner(DeRunnner deRunnner) {
         this.deRunnner = deRunnner;
@@ -54,7 +55,7 @@ abstract class  DeRunner implements DeRunnner{
     public abstract void see() ;
 }
 
-class DeRunnerA extends DeRunner{
+class DeRunnerA extends DeRunner {
 
     public DeRunnerA(DeRunnner deRunnner) {
         super(deRunnner);
@@ -72,7 +73,7 @@ class DeRunnerA extends DeRunner{
 }
 
 
-class DeRunnerB extends DeRunner{
+class DeRunnerB extends DeRunner {
 
     public DeRunnerB(DeRunnner deRunnner) {
         super(deRunnner);

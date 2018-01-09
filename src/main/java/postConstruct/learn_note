@@ -1,0 +1,11 @@
+servlet执行流程图：
+  开始：
+  web容器加载servlet；
+  servlet构造函数；
+  PostConstruct注解方式；
+  init();
+  service;
+  destroy();
+  PreDestroy注解方式
+ 应用场景：
+   初始化servlet时加载一些缓存信息

@@ -1,7 +1,5 @@
 package pattern;
 
-import sun.tools.jconsole.BorderedComponent;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

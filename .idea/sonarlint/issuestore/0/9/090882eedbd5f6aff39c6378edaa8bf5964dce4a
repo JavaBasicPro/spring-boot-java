@@ -1,0 +1,10 @@
+
+^squid:HiddenFieldCheck"8Rename "list" which hides the field declared at line 18.(ìèö8‰±¼¥„,
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(’µ­Ôùÿÿÿÿ
+Gsquid:S1172"+Remove this unused method parameter "list".(öËÚ‚8ºÃ¿¥„,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(²¸Ø£8‰±¼¥„,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÀèÔ’şÿÿÿÿ8ºÃ¿¥„,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ê­†˜8¾³¥„,

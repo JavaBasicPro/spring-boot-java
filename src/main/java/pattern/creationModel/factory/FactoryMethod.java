@@ -38,14 +38,15 @@ abstract class Car{
 }
 
 //具体产品
-class Benz extends Car{
+class Benz extends Car {
 
     @Override
     public void driver() {
         System.out.println("=====benz======");
     }
 }
-class Bmw extends Car{
+
+class Bmw extends Car {
 
     @Override
     public void driver() {
@@ -59,7 +60,7 @@ abstract class Driver{
 }
 
 //具体的每个工厂
-class BenzDriver extends Driver{
+class BenzDriver extends Driver {
 
     @Override
     public Car createCar(String car) {
@@ -67,7 +68,7 @@ class BenzDriver extends Driver{
     }
 }
 
-class BmwDriver extends Driver{
+class BmwDriver extends Driver {
 
     @Override
     public Car createCar(String car) {

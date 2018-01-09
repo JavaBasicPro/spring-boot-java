@@ -20,7 +20,7 @@ public class SimpleFactory {
 //简单工厂
 class PizzaFactory{
 
-    public static PizzaFactory  createPizza(String type){
+    public static PizzaFactory createPizza(String type){
 
         if(type.equals("cheese")){
             return new CheesePizza();
@@ -30,14 +30,15 @@ class PizzaFactory{
     }
 
 }
+
 //具体产品1
-class CheesePizza extends PizzaFactory{
+class CheesePizza extends PizzaFactory {
     public void make(){
         System.out.println("制作蛋糕");
     }
 }
 
-class OtherPizza extends PizzaFactory{
+class OtherPizza extends PizzaFactory {
 
     public void make(){
         System.out.println("烘培蛋糕");

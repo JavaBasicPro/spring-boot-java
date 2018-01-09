@@ -1,11 +1,9 @@
 package pattern;
 
 import java.io.File;
-import java.io.FileDescriptor;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * Created by jinpanpan on 2017/11/15.
@@ -13,7 +11,7 @@ import java.io.InputStream;
 public class DecoratorTest {
 
     public static void main(String [] args){
-        ConcreteComponent  concreteComponent=new  ConcreteComponent();
+        ConcreteComponent concreteComponent=new ConcreteComponent();
         ManDecoratorA manDecoratorA=new ManDecoratorA(concreteComponent);
         //ManDecoratorB manDecoratorB=new ManDecoratorB(concreteComponent);
         manDecoratorA.eat();
@@ -39,7 +37,7 @@ interface Component{
 }
 
 //具体构件
-class ConcreteComponent implements Component{
+class ConcreteComponent implements Component {
 
     @Override
     public void eat() {
@@ -48,7 +46,7 @@ class ConcreteComponent implements Component{
 }
 
 //装饰对象
-abstract class Decorator implements Component{
+abstract class Decorator implements Component {
 
     private Component component;
 
@@ -60,8 +58,9 @@ abstract class Decorator implements Component{
         component.eat();
     }
 }
+
 //可以使用一个或者多个具体的装饰者去包装具体对象
-class ManDecoratorA extends Decorator{
+class ManDecoratorA extends Decorator {
 
     public ManDecoratorA(Component component) {
         super(component);
@@ -78,7 +77,8 @@ class ManDecoratorA extends Decorator{
         System.out.println("======= A在吃一顿");
     }
 }
-class ManDecoratorB extends Decorator{
+
+class ManDecoratorB extends Decorator {
 
     public ManDecoratorB(Component component) {
         super(component);

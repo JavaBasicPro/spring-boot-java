@@ -24,7 +24,7 @@ interface  DyRunner {
     void run();
 }
 
-class DyRealRunner implements DyRunner{
+class DyRealRunner implements DyRunner {
 
     @Override
     public void run() {

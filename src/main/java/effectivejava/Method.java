@@ -1,9 +1,7 @@
 package effectivejava;
 
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -168,7 +166,8 @@ class Wine{
         System.out.println("wine") ;
     }
 }
-class SparkWine extends  Wine{
+
+class SparkWine extends Wine {
 
     public void name(){
         System.out.println("SparkWine");
@@ -180,7 +179,7 @@ class SparkWine extends  Wine{
     }*/
 }
 
-class Champague extends  Wine{
+class Champague extends Wine {
 
     public void name(){
         System.out.println("Champague wine");

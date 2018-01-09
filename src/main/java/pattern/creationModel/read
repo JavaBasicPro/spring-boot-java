@@ -2,6 +2,6 @@
 简单工厂模式（Simple Factory）
 工厂方法模式（Factory Method）
 抽象工厂模式（Abstract Factory）
-创建者模式（Builder）
-原型模式（Prototype）
-单例模式（Singleton）
+创建者模式（Builder）--->
+原型模式（Prototype） --->实现对象的深复制， 通过序列化或者重写clone方法
+单例模式（Singleton）--->懒汉、饿汉
