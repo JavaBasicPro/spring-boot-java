@@ -1,19 +1,0 @@
-
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(èž¾ò
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(«·éåøÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡åÍ°
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(ùŸ½Íûÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(ëù‹ÿÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(žš‡ªûÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(ž‹î‡üÿÿÿÿ
-M
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÃÖ›ë
-@squid:S1481"&Remove this unused "c" local variable.(¬£Ÿ™ýÿÿÿÿ
-Osquid:S1854"5Remove this useless assignment to local variable "c".(¬£Ÿ™ýÿÿÿÿ
-Osquid:S1161":Add the "@Override" annotation above this method signature(¥©°«
-Osquid:S1161":Add the "@Override" annotation above this method signature(¥©°«
-Osquid:S1161":Add the "@Override" annotation above this method signature(Ä…©
