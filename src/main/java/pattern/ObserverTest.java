@@ -23,7 +23,9 @@ public class ObserverTest {
 
         sb.removeObserver(o);
 
-        SwingExample swingExample=new SwingExample();
+        observer.update(sb.getTemperature());
+
+        SwingExample swingExample = new SwingExample();
         swingExample.go();
 
 
@@ -41,8 +43,8 @@ public class ObserverTest {
  * 该模式中：变化的是主题的状态、观察者的数目和类型;主题是不变的
  * 优点：
  * 1、针对接口编程，而不针对实现（观察者用主题的接口向主题注册观察者；
- *  主题利用观察者的接口通知观察者）
- *  2、多用组合、少用继承：使用组合将观察者组合进主题，对象间的关系不是通过继承产生，而是在运行时利用组合产生的
+ * 主题利用观察者的接口通知观察者）
+ * 2、多用组合、少用继承：使用组合将观察者组合进主题，对象间的关系不是通过继承产生，而是在运行时利用组合产生的
  */
 //观察者接口
 interface Observer {
@@ -138,6 +140,26 @@ class ConcreteSubject implements Subject {
     }
 }
 
+abstract class AbstractSubject {
+
+    List<Observer> observerList;
+
+    void registerObserver(Observer observer) {
+
+    }
+
+    void removeObserver(Observer observer) {
+
+    }
+
+    void notifyObservers() {
+
+    }
+
+
+}
+
+
 /*
 基于jdk的JButton实现观察者和可观察者
  */
@@ -153,7 +175,7 @@ class SwingExample {
         button.addActionListener(new AngleListinser());
         button.addActionListener(new DevilListinser());
         button.updateUI();
-        frame.getContentPane().add(BorderLayout.CENTER,button);
+        frame.getContentPane().add(BorderLayout.CENTER, button);
     }
 }
 
