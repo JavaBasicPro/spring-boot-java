@@ -1,0 +1,36 @@
+1、应用代码连接数据库的架构：
+应用服务  ----》 获取数据库连接----》连接池 ---》数据库服务器
+
+2、连接池：只是为了缓解数据库的压力而创建的，其实也可以使用 JDBC 直接连【数据库服务器】,直连中的Connection、PreparedStatement是由 数据库开发者提供的【通用接口】，
+每一台数据库服务器都有 这两个接口类的具体实现，至于数据库服务器具体如何实现的由其不同数据库自定义；
+
+3、spring 的jdbc连接 （spring-jdbc.jar）
+    只是对原始的jdbc连接做了封装，优点是通过封装提高了开发效率和开发的灵活性；最主要的封装类为：JdbcTemplate；
+     JdbcTemplate详情介绍：
+      1、class JdbcTemplate  extends  JdbcAccessor  implements JdbcOperations;
+
+      2、JdbcOperations 接口的方法：
+         T execute(StatementCallback var1)throws DataAccessException;
+
+         void query(String var1, RowCallbackHandler var2)throws DataAccessException;
+
+         int[] batchUpdate(String... var1)throws DataAccessException; 等等
+
+      3、JdbcAccessor 抽象类的属性：
+
+         private DataSource dataSource;
+
+         private SQLExceptionTranslator exceptionTranslator;
+
+         private boolean lazyInit =true;
+
+4、Spring与Mybatis的整合
+
+
+5、Spring如何实现单个or集群数据库事务 (spring-tx.jar 负责事务处理)
+   （1）通过aop功能实现声明式事务处理，比如：事务属性的的配置和读取、事务对象的抽象等，具体为：
+   （2）TransactionProxyFactoryBean---》代理生成Proxy的代理对象；在该代理对象中通过TransactionInterceptor来完成代理方法的拦截，因此实现spring的事务管理，而且事务具体的提交、
+   回滚、生成、挂起等操作是由不同的底层数据库实现的，spring只是对不同的事务实现做了抽象和适配；---》此处使用了【适配器】模式
+   （3）spring即支持 声明式事务处理，也支持编程式事务处理，spring把通用的事务处理过程抽象出来并通过aop进行封装，然后用声明式的使用方式交给客户使用，通过这样将事务管理过程 和 业务代码分离，
+
+
